@@ -1,17 +1,13 @@
 $(document).ready(function() {
-    getNextScenario("./scenarios/0.json")
+    getNextScenario("0")
 })
 
-function getNextScenario(filename) {
+function getNextScenario(scenarioNumber) {
     $("button").remove()
-    $.getJSON(filename).done(function(data) {
-        $("body").append(data["text"])
+    $.getJSON("./scenarios/" + scenarioNumber + ".json").done(function(data) {
+        $("body").append("\n" + data["text"])
         for (var i = 0; i < data["connections"].length; i++) {
-            $("body").append(`<button id="` + data["connections"][i].toString() + `">` + data["connections"][i].toString() + `</button>`)
+            $("body").append(`<button onelick="getNextScenario(` + data["connections"][i].toString() + `)">` + data["connections"][i].toString() + `</button>`)
         }
     });
 }
-
-$("button").on("click", function() {
-    getNextScenario("./scenarios/" + $(this).attr("id") + ".json")
-})
