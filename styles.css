@@ -5,3 +5,16 @@
     font-weight: 300;
     font-size: 16pt;
 }
+
+button {
+    border: none;
+    background-color: rgb(255 125 48);
+    border-radius: 6px;
+    padding: 6px;
+    margin: 5px;
+    font-size: 12pt;
+}
+
+#buttons {
+    padding: 5px;
+}
