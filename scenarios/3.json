@@ -1,4 +1,13 @@
 {
     "text": "Romeo: Oi, what’s up there? <br>It’ s Juliet!<br>Eyes brighter than an iPhone’ s flash!<br>Face more tender than a KFC zinger burger!<br>How I wish I were a makeup brush to that face!<br>Juliet: Far out.",
-    "connections": [6, 7, 8]
+    "connections": [{
+        "number": 6,
+        "prompt": "Does Juliet really love Romeo, or is she trying to win him over for some other purpose?"
+    }, {
+        "number": 7,
+        "prompt": "Will Juliet speak out loud, or will Romeo speak first?"
+    }, {
+        "number": 8,
+        "prompt": "Does Juliet love Romeo as much as he does her? What does she have to say?"
+    }]
 }

@@ -8,9 +8,11 @@ function getNextScenario(scenarioNumber) {
         $("body").append(data["text"] + "<br>")
         for (var i = 0; i < data["connections"].length; i++) {
             try {
-                $("body").append(`<button onclick="getNextScenario(` + data["connections"][i]["number"].toString() + `)">` + data["connections"][i]["prompt"].toString() + `</button>`)
+                $("body").prepend("<h1>Chapter " + data["connections"][i]["number"] + "</h1><br><br>")
+                $("#buttons").append(`<button onclick="getNextScenario(` + data["connections"][i]["number"].toString() + `)">` + data["connections"][i]["prompt"].toString() + `</button>`)
             } catch (error) {
-                $("body").append(`<button onclick="getNextScenario(` + data["connections"][i].toString() + `)">` + data["connections"][i].toString() + `</button>`)
+                $("body").prepend("<h1>Chapter " + data["connections"][i] + "</h1><br><br>")
+                $("#buttons").append(`<button onclick="getNextScenario(` + data["connections"][i].toString() + `)">` + data["connections"][i].toString() + `</button>`)
             }
         }
     });

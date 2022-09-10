@@ -1,4 +1,13 @@
 {
     "text": "Juliet: Who’s out there? Creep!",
-    "connections": [14, 15, 16]
+    "connections": [{
+        "number": 14,
+        "prompt": "Is Romeo being too strange? Will Juliet get freaked out and go inside?"
+    }, {
+        "number": 15,
+        "prompt": "Has Juliet cut off Romeo's love by her brutally honest comment? How will Romeo reply after having his actions insulted?"
+    }, {
+        "number": 16,
+        "prompt": "Does Juliet love Romeo so much she dosen't mind him creeping up on her? How do they discuss their love?"
+    }]
 }
