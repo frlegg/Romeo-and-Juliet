@@ -5,7 +5,6 @@ $(document).ready(function() {
 function getNextScenario(scenarioNumber) {
     $("body").html("")
     $.getJSON("./scenarios/" + scenarioNumber + ".json").done(function(data) {
-        $("body").append("<h1>Chapter " + scenarioNumber + "</h1><br>")
         $("body").append(data["text"] + "<br>")
         for (var i = 0; i < data["connections"].length; i++) {
             try {
