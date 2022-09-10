@@ -1,4 +1,13 @@
 {
     "text": "Romeo: How can Mercuitio laugh at me when HE'S never dated ANYONE. What a wimp!",
-    "connections": [1, 2, 3]
+    "connections": [{
+        "prompt": "Maybe Juliet isn't there. How will Romeo react?",
+        "number": 1
+    }, {
+        "prompt": "Does tragedy strike? Will Romeo's story come to an early end?",
+        "number": 2
+    }, {
+        "prompt": "Is Romeo's love there? Does he find the jewel of his life?",
+        "number": 3
+    }]
 }
