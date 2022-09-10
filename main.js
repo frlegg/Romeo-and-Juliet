@@ -5,7 +5,7 @@ $(document).ready(function() {
 function getNextScenario(scenarioNumber) {
     $("body").html(`<div id="buttons"></div>`)
     $.getJSON("./scenarios/" + scenarioNumber + ".json").done(function(data) {
-        $("body").append(data["text"] + "<br>")
+        $("body").prepend(data["text"] + "<br>")
         for (var i = 0; i < data["connections"].length; i++) {
             try {
                 $("#buttons").append(`<button onclick="getNextScenario(` + data["connections"][i]["number"].toString() + `)">` + data["connections"][i]["prompt"].toString() + `</button>`)
